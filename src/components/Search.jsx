@@ -46,10 +46,10 @@ const Search = () => {
 
     return (
         <div>
-            <input type='text' value={city} onChange={handleInput} onKeyDown={handleKeyDown}  placeholder='Enter the city '/>
+            <input type='text' className="search" value={city} onChange={handleInput} onKeyDown={handleKeyDown}  placeholder='Enter the city '/>
            
             {details.name && (
-                <div>
+                <div className='weather'>
                     <h2>{details.name}</h2>
                     <h1>{details.temp}°F </h1>
                     <div>{details.desc}</div>
